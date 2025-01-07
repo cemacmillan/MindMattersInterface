@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Authors>CEM</Authors>
+        <Copyright>Copyright (c) 2024 CEM</Copyright>
+        <TargetFramework>net48</TargetFramework>
+        <LangVersion>preview</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <Optimize>true</Optimize>
+        <EnableNETAnalyzers>True</EnableNETAnalyzers>
+        <AnalysisLevel>preview-all</AnalysisLevel>
+        <DebugSymbols>false</DebugSymbols>
+        <DebugType>none</DebugType>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>5</WarningLevel>
+        <OutDir>../Assemblies/</OutDir> <!-- The output path for dll files  -->
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.4297" />
+      <PackageReference Include="Lib.Harmony" Version="2.3.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="MindMatters">
+          <HintPath>../../MindMatters/1.5/Assemblies/MindMatters.dll</HintPath>
+          <Private>False</Private>
+      </Reference>
+    </ItemGroup>
+
+</Project>
